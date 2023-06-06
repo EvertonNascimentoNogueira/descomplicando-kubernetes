@@ -22,5 +22,10 @@ kubectl get nodes
 
 --------------------------------------------------------------------------
 
-# Criando um cluster com 3 nós com arquivo .yaml
+# Criando um cluster com 3 nós com arquivo(manifesto) .yaml
 kind create cluster --name kind-multinodes --config $HOME/kind-3nodes.yaml
+
+--------------------------------------------------------------------------
+
+# Criando um pod com nginx atraves do arquivo(manifesto) .yaml
+kubectl apply -f cria_pod_nginx.yaml
