@@ -22,5 +22,5 @@ kubectl get nodes
 
 --------------------------------------------------------------------------
 
-# Criando um cluster com 3 nos com arquivo .yaml
+# Criando um cluster com 3 nós com arquivo .yaml
 kind create cluster --name kind-multinodes --config $HOME/kind-3nodes.yaml
