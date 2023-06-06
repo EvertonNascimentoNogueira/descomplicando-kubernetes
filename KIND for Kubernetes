@@ -8,14 +8,19 @@ chmod +x ./kind
 
 sudo mv ./kind /usr/local/bin/kind
 
--------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 # Criando um cluster com o Kind
 
 kind create cluster --name giropops
 
--------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 # Listando nodes
 
 kubectl get nodes
+
+--------------------------------------------------------------------------
+
+# Criando um cluster com 3 nos com arquivo .yaml
+kind create cluster --name kind-multinodes --config $HOME/kind-3nodes.yaml
